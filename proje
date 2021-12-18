@@ -1,0 +1,33 @@
+#İlk Soru
+
+a=[[1,'a',['cat'],2],[[[3,3],'dog'],4,5]]
+b=[]
+for i in range(len(a)):
+    if type(a[i])!=list:
+        b.append(a[i])
+    if type(a[i])==list:
+        for j in range(len(a[i])):
+            if type(a[i][j])!=list:
+                b.append(a[i][j])
+            if type(a[i][j])==list:
+                for k in range(len(a[i][j])):
+                    if type(a[i][j][k])!=list:
+                        b.append(a[i][j][k])
+                    if type(a[i][j][k])==list:
+                        for l in range(len(a[i][j][k])):
+                            b.append(a[i][j][k][l])
+a=b
+print(a)
+
+
+
+
+
+#ikinci soru
+
+a=[[1, 2], [3, 4], [5, 6, 7]]
+for i in range(len(a)):
+    if type(a[i])==list:
+        a[i].reverse()
+a.reverse()
+print(a)
