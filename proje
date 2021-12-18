@@ -19,9 +19,8 @@ for i in range(len(a)):
 a=b
 print(a)
 
-
-
-
+output:
+[1, 'a', 'cat', 2, 3, 3, 'dog', 4, 5]
 
 #ikinci soru
 
@@ -31,3 +30,6 @@ for i in range(len(a)):
         a[i].reverse()
 a.reverse()
 print(a)
+
+output:
+[[7, 6, 5], [4, 3], [2, 1]]
